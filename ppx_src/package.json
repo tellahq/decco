@@ -1,22 +1,23 @@
 {
   "name": "ppx_decco",
   "version": "0.0.0",
-  "description": "This is a hack because esy doesn't appear to support scoped packages (or I just don't get it)",
-  "main": "index.js",
+  "description": "Decco",
   "license": "MIT",
   "esy": {
     "build": "dune build -p #{self.name}",
     "release": {
-      "bin": [
-        "Ppx_decco"
-      ]
+      "bin": ["Ppx_decco"]
     }
   },
-  "devDependencies": {
-    "@opam/reason": "^3.7.0",
-    "@opam/dune": ">=2.8.4",
-    "@opam/ppxlib": "^0.22.0",
-    "ocaml": "4.12.x",
-    "@opam/ocaml-lsp-server": "*"
+  "dependencies": {
+    "ocaml": "4.14.0",
+    "@opam/reason": ">= 3.8.0",
+    "@opam/dune": ">= 3.0",
+    "@opam/ppxlib": "0.26.0",
+    "@opam/ocamlfind": "1.9.3"
+  },
+  "resolutions": {
+    "@opam/reason": "reasonml/reason:reason.opam#4f6ff7616bfa699059d642a3d16d8905d83555f6",
+    "ocaml": "esy-ocaml/ocaml#81dcfe8622668f5c1046f1e1e99553b93b627478"
   }
 }

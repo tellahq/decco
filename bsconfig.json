@@ -13,9 +13,6 @@
         }
     ],
     "refmt": 3,
-    "ppx-flags": [
-        "./ppx"
-    ],
     "warnings": {
         "number": "+A-9-40-42"
     },

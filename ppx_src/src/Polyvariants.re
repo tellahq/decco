@@ -119,7 +119,7 @@ let generateDecoderCase = (generatorSettings, row) => {
         {
             pc_lhs: Pconst_string(txt, Location.none, None)
                 |> Pat.constant
-                |> (v) => Some(v)
+                |> (v) => Some(([], v))
                 |> Pat.construct(lid("Js.Json.JSONString")),
             pc_guard: None,
             pc_rhs: [%expr
