@@ -1,16 +1,12 @@
 {
-  "checksum": "7d94aa4fd9ba7aa3de8ab194a859a13a",
-  "root": "ppx_decco@link-dev:./package.json",
+  "checksum": "33048aa3cb303ad72936100f76dd4f37",
+  "root": "ppx_decco@link-dev:./esy.json",
   "node": {
-    "ppx_decco@link-dev:./package.json": {
-      "id": "ppx_decco@link-dev:./package.json",
+    "ppx_decco@link-dev:./esy.json": {
+      "id": "ppx_decco@link-dev:./esy.json",
       "name": "ppx_decco",
-      "version": "link-dev:./package.json",
-      "source": {
-        "type": "link-dev",
-        "path": ".",
-        "manifest": "package.json"
-      },
+      "version": "link-dev:./esy.json",
+      "source": { "type": "link-dev", "path": ".", "manifest": "esy.json" },
       "overrides": [],
       "dependencies": [
         "ocaml@github:esy-ocaml/ocaml#81dcfe8622668f5c1046f1e1e99553b93b627478@d41d8cd9",
